@@ -24,7 +24,7 @@ export const getBookbyid = (req, res) => {
 };
 export const updateBookdetails = (req, res) => {
   const { id } = req.params;
-  const { name, author, description, price, available } = req.body;
+  const { name, author, description, price, image, available } = req.body;
   books
     .findByIdAndUpdate(
       id,
